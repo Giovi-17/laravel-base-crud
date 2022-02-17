@@ -9,6 +9,9 @@
         <li class="nav-item active">
           <a class="nav-link" href="{{ route('comics.index') }}">Home <span class="sr-only"></span></a>
         </li>
+        <li>
+          <a class="nav-link" href="{{ route('comics.create') }}">Creazione Fumetto <span class="sr-only"></span></a>
+        </li>
       </ul>
     </div>
 </nav>
