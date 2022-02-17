@@ -27,49 +27,49 @@
             <div>
 
                 <label for="title" class="form-label">Title</label>
-                <input type="text" class="form-control" id="title" name="title">
+                <input type="text" class="form-control" id="title" name="title" value="{{ old('title') }}">
 
             </div>
 
             <div>
 
                 <label for="thumb" class="form-label">Thumb</label>
-                <input type="text" class="form-control" id="thumb" name="thumb">
+                <input type="text" class="form-control" id="thumb" name="thumb" value="{{ old('thumb') }}">
 
             </div>
 
             <div>
 
                 <label for="price" class="form-label">Price</label>
-                <input type="text" class="form-control" id="price" name="price">
+                <input type="text" class="form-control" id="price" name="price" value="{{ old('price') }}">
 
             </div>
 
             <div>
 
                 <label for="series" class="form-label">Series</label>
-                <input type="text" class="form-control" id="series" name="series">
+                <input type="text" class="form-control" id="series" name="series" value="{{ old('series') }}">
 
             </div>
 
             <div>
 
                 <label for="sale_data" class="form-label">Sale_data</label>
-                <input type="text" class="form-control" id="sale_data" name="sale_date">
+                <input type="text" class="form-control" id="sale_data" name="sale_date" value="{{ old('sale_date') }}">
 
             </div>
 
             <div>
 
                 <label for="type" class="form-label">Type</label>
-                <input type="text" class="form-control" id="type" name="type">
+                <input type="text" class="form-control" id="type" name="type" value="{{ old('type') }}">
 
             </div>
 
             <div class="form-group">
                 
                 <label for="description">Description</label>
-                <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+                <textarea class="form-control" id="description" name="description" rows="3">{{ old('description') }}</textarea>
             
             </div>
 
