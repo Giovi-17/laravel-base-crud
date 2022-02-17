@@ -16,7 +16,15 @@ Show Comic
             <div>Serie: {{ $comics->series }}</div>
             <div>Data Vendita: {{ $comics->sale_date }}</div>
             <div>Tipo: {{ $comics->type }}</div>
+            <div><a class="btn btn-primary" href="{{ route('comics.edit', ['comic' => $comics->id]) }}">Modifica</a></div>
         </div>
       </div>
+
+      <form action="{{ route('comics.destroy', ['comic' => $comics->id]) }}" method="post">
+        @csrf
+        @method('DELETE')
+
+        <button class="btn btn-danger" onclick="return confirm('Sei sicuro di voler cancellare?')">Cancella</button>
+    </form>
 
 @endsection
