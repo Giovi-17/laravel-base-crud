@@ -45,7 +45,6 @@ class HomeController extends Controller
     public function store(Request $request)
     {
         $form_data = $request->all();
-        dd($form_data);
         
         $new_comic = new Comic();
         $new_comic->fill($form_data);

@@ -45,7 +45,7 @@
             <div>
 
                 <label for="sale_data" class="form-label">Sale_data</label>
-                <input type="text" class="form-control" id="sale_data" name="sale_data">
+                <input type="text" class="form-control" id="sale_data" name="sale_date">
 
             </div>
 
